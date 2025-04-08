@@ -32,6 +32,11 @@ import '@ionic/react/css/palettes/dark.system.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import Register from './pages/Register';
+import Login from './pages/Login';
+import Form from './pages/Form';
+import Invoice from './pages/Invoice';
+import Admin from './pages/Admin';
 
 setupIonicReact();
 
@@ -44,6 +49,21 @@ const App: React.FC = () => (
         </Route>
         <Route exact path="/">
           <Redirect to="/home" />
+        </Route>
+        <Route exact path="/register">
+          <Register />
+        </Route>
+        <Route exact path="/login">
+          <Login />
+        </Route>
+        <Route exact path="/form">
+          <Form />
+        </Route>
+        <Route exact path="/tabs/invoice">
+          <Invoice />
+        </Route>
+        <Route exact path="/admin">
+          <Admin />
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>
