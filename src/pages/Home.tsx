@@ -27,21 +27,19 @@ const Home: React.FC = () => {
 
           {/* Routes for each tab */}
           <IonRouterOutlet>
-            <Route exact path="/">
-              <Redirect to="/tabs/service" />
-            </Route>
-            <Route exact path="/tabs/service" component={Service} />
-            <Route exact path="/tabs/products" component={Products} />
+            <Route exact path="/home/service" component={Service} />
+            <Route exact path="/home/products" component={Products} />
+            <Route exact path="/home" component={Service} />
           </IonRouterOutlet>
 
           {/* Bottom tab bar */}
           <IonTabBar slot="bottom">
-            <IonTabButton tab="service" href="/tabs/service">
+            <IonTabButton tab="service" href="/home/service">
               <IonIcon icon={personOutline} />
               <IonLabel>Services</IonLabel>
             </IonTabButton>
 
-            <IonTabButton tab="products" href="/tabs/products">
+            <IonTabButton tab="products" href="/home/products">
               <IonIcon icon={bagHandleOutline} />
               <IonLabel>Products</IonLabel>
             </IonTabButton>

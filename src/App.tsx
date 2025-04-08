@@ -50,19 +50,35 @@ const App: React.FC = () => (
         <Route exact path="/">
           <Redirect to="/home" />
         </Route>
+        <Route exact path="/home">
+          <Home />
+        </Route>
+        <Route exact path="/home/service">
+          <Home />
+        </Route>
+        <Route exact path="/home/products">
+          <Home />
+        </Route>
         <Route exact path="/register">
           <Register />
         </Route>
         <Route exact path="/login">
           <Login />
         </Route>
-        <Route exact path="/form">
+        
+        {/* <Route exact path="/form">
           <Form />
-        </Route>
-        <Route exact path="/tabs/invoice">
+        </Route> */}
+        <Route exact path="/invoice">
           <Invoice />
         </Route>
         <Route exact path="/admin">
+          <Admin />
+        </Route>
+        <Route exact path="/admin/services">
+          <Admin />
+        </Route>
+        <Route exact path="/admin/products">
           <Admin />
         </Route>
       </IonRouterOutlet>

@@ -75,7 +75,7 @@ const Service: React.FC = () => {
     };
 
     history.push({
-      pathname: '/tabs/invoice',
+      pathname: '/invoice',
       state: invoiceData,
     });
   };
@@ -176,7 +176,7 @@ const Service: React.FC = () => {
           header="Subscribe for ₹1000/year?"
           message={`
             👉 Free towing charges (Save ₹500 per service)!
-            👉 Fast service delivery within 1 hour.
+            👉 Fast service delivery within 3 hour.
             Without subscription: ₹500 towing + service in 12 hours.
           `}
           buttons={[
